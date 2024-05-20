@@ -2,6 +2,9 @@ import "./App.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import profpic from "../public/profilepic.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 
 export default function App() {
   return (
@@ -18,7 +21,7 @@ export default function App() {
                 className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 href="#"
               >
-                Linkedln
+                Resume
               </a>
             </li>
           </ul>
@@ -39,8 +42,41 @@ export default function App() {
           <AiFillLinkedin />
           <AiFillInstagram />
         </div>
+        <div className="mt-20 mb-10 flex justify-center">
+          <img
+            className="rounded-full"
+            src={profpic}
+            alt="Patricio's profile picture"
+          />
+        </div>
+      </section>
+      <section>
         <div>
-          <img src={profpic} alt="Patricio's profile picture" />
+          <h3 className="text-3xl py-1">Services I offer</h3>
+          <p className="text-md py-2 leading-8 text-gray-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+            <span className="text-teal-500">Consectetur </span>
+            maiores illo itaque minus veritatis perferendis{" "}
+            <span className="text-teal-500">molestias</span> deserunt facere
+            animi enim!
+          </p>
+          <p className="text-md py-2 leading-8 text-gray-800">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+            perspiciatis.
+          </p>
+        </div>
+        <div>
+          <div className="text-center shadow-lg p-10">
+            <img className="mx-auto" src={design} width={100} height={100} />
+            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
+            <p className="py-2">
+              Creating elegant designs suited for your needs
+            </p>
+            <h4 className="py-4 text-teal-600">Design tools I use</h4>
+            <p className="text-gray-800 py-1">Photoshop</p>
+            <p className="text-gray-800 py-1">Ilustrator</p>
+            <p className="text-gray-800 py-1">Figma</p>
+          </div>
         </div>
       </section>
     </main>
