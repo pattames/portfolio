@@ -23,11 +23,13 @@ export default function App() {
           </ul>
         </nav>
         <div className="text-center p-10">
-          <h2 className="text-5xl py-2 text-teal-600 font-medium">
+          <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
             Patricio Tamés
           </h2>
-          <h3 className="text-2xl py-2">Junior Full-Stack Developer.</h3>
-          <p className="text-md py-5 leading-8 text-gray-800">
+          <h3 className="text-2xl py-2 md:text-3xl">
+            Junior Full-Stack Developer.
+          </h3>
+          <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
             odit. Dignissimos sapiente voluptas voluptates velit! Possimus
             fugiat reiciendis beatae ad.
@@ -40,7 +42,7 @@ export default function App() {
         </div>
         <div className="mt-20 mb-10 flex justify-center">
           <img
-            className="rounded-full"
+            className="rounded-full w-96"
             src="profilepic.png"
             alt="Patricio's profile picture"
           />
@@ -61,8 +63,8 @@ export default function App() {
             perspiciatis.
           </p>
         </div>
-        <div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+        <div className="lg:flex gap-10 justify-center">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
             <img
               className="mx-auto"
               src="design.png"
@@ -78,7 +80,7 @@ export default function App() {
             <p className="text-gray-800 py-1">Ilustrator</p>
             <p className="text-gray-800 py-1">Figma</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
             <img className="mx-auto" src="code.png" width={100} height={100} />
             <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
             <p className="py-2">
@@ -89,7 +91,7 @@ export default function App() {
             <p className="text-gray-800 py-1">Ilustrator</p>
             <p className="text-gray-800 py-1">Figma</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
             <img
               className="mx-auto"
               src="consulting.png"
@@ -122,15 +124,18 @@ export default function App() {
             perspiciatis.
           </p>
         </div>
-        <div>
-          <div>
-            <img src="web1.png" alt="" />
+        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1">
+            <img className="rounded-lg object-cover" src="web1.png" alt="" />
           </div>
-          <div>
-            <img src="web2.png" alt="" />
+          <div className="basis-1/3 flex-1">
+            <img className="rounded-lg object-cover" src="web2.png" alt="" />
           </div>
-          <div>
-            <img src="web3.png" alt="" />
+          <div className="basis-1/3 flex-1">
+            <img className="rounded-lg object-cover" src="web3.png" alt="" />
+          </div>
+          <div className="basis-1/3 flex-1">
+            <img className="rounded-lg object-cover" src="web4.png" alt="" />
           </div>
         </div>
       </section>
