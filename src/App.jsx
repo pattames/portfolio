@@ -64,7 +64,7 @@ export default function App() {
           </p>
         </div>
         <div className="lg:flex gap-10 justify-center">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
             <img
               className="mx-auto"
               src="design.png"
@@ -80,7 +80,7 @@ export default function App() {
             <p className="text-gray-800 py-1">Ilustrator</p>
             <p className="text-gray-800 py-1">Figma</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
             <img className="mx-auto" src="code.png" width={100} height={100} />
             <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
             <p className="py-2">
@@ -91,7 +91,7 @@ export default function App() {
             <p className="text-gray-800 py-1">Ilustrator</p>
             <p className="text-gray-800 py-1">Figma</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
             <img
               className="mx-auto"
               src="consulting.png"
@@ -124,17 +124,17 @@ export default function App() {
             perspiciatis.
           </p>
         </div>
-        <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-          <div className="basis-1/3">
+        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1">
             <img className="rounded-lg object-cover" src="web1.png" alt="" />
           </div>
-          <div className="basis-1/3">
+          <div className="basis-1/3 flex-1">
             <img className="rounded-lg object-cover" src="web2.png" alt="" />
           </div>
-          <div className="basis-1/3">
+          <div className="basis-1/3 flex-1">
             <img className="rounded-lg object-cover" src="web3.png" alt="" />
           </div>
-          <div className="basis-1/3">
+          <div className="basis-1/3 flex-1">
             <img className="rounded-lg object-cover" src="web4.png" alt="" />
           </div>
         </div>
