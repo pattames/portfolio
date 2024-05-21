@@ -24,10 +24,10 @@ export default {
             transform: "translateY(0)",
           },
           "40%": {
-            transform: "translateY(-15px)",
+            transform: "translateY(-20px)",
           },
           "60%": {
-            transform: "translateY(-3px)",
+            transform: "translateY(-5px)",
           },
         },
       },

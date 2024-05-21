@@ -6,31 +6,33 @@ import { useState } from "react";
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  //Aquí mis proyectos:
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section>
           <nav className="py-10 mb-12 flex justify-between opacity-0 animate-slideInFromTop">
-            <h1 className="text-xl font-burtons dark:text-white hover:scale-125">
+            <h1 className="text-xl font-burtons dark:text-white duration-200 hover:scale-110">
               Patricio Tamés
             </h1>
             <ul className="flex items-center">
-              <li className="animate-bounceOnce">
+              <li className="animate-bounceOnce mr-8">
                 {darkMode ? (
                   <BsFillSunFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="text-white cursor-pointer text-2xl"
+                    className="text-white cursor-pointer text-2xl duration-200 hover:scale-125"
                   />
                 ) : (
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl"
+                    className="cursor-pointer text-2xl duration-200 hover:scale-125"
                   />
                 )}
               </li>
-              <li>
+              <li className="duration-200 hover:scale-110">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500"
                   href="#"
                 >
                   Resume
@@ -52,9 +54,9 @@ export default function App() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade">
-            <AiFillGithub />
-            <AiFillLinkedin />
-            <AiFillInstagram />
+            <AiFillGithub className="duration-200 hover:scale-125" />
+            <AiFillLinkedin className="duration-200 hover:scale-125" />
+            <AiFillInstagram className="duration-200 hover:scale-125" />
           </div>
           <div className="mt-20 mb-10 flex justify-center opacity-0 animate-fade">
             <img
@@ -84,7 +86,7 @@ export default function App() {
             </p>
           </div>
           <div className="lg:flex gap-10 justify-center opacity-0 animate-fade">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600 duration-200 hover:scale-105">
               <img
                 className="mx-auto"
                 src="design.png"
@@ -106,7 +108,7 @@ export default function App() {
               </p>
               <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600 duration-200 hover:scale-105">
               <img
                 className="mx-auto"
                 src="code.png"
@@ -128,7 +130,7 @@ export default function App() {
               </p>
               <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600 duration-200 hover:scale-105">
               <img
                 className="mx-auto"
                 src="consulting.png"
@@ -172,16 +174,16 @@ export default function App() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 duration-200 hover:scale-105">
               <img className="rounded-lg object-cover" src="web1.png" alt="" />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 duration-200 hover:scale-105">
               <img className="rounded-lg object-cover" src="web2.png" alt="" />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 duration-200 hover:scale-105">
               <img className="rounded-lg object-cover" src="web3.png" alt="" />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 duration-200 hover:scale-105">
               <img className="rounded-lg object-cover" src="web4.png" alt="" />
             </div>
           </div>
