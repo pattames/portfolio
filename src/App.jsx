@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white px-10 md:px-20 lg:px-40">
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Patricio Tamés</h1>
