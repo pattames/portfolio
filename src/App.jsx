@@ -9,13 +9,13 @@ export default function App() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">
+        <section>
+          <nav className="py-10 mb-12 flex justify-between opacity-0 animate-slideInFromTop">
+            <h1 className="text-xl font-burtons dark:text-white hover:scale-125">
               Patricio Tamés
             </h1>
             <ul className="flex items-center">
-              <li>
+              <li className="animate-bounceOnce">
                 {darkMode ? (
                   <BsFillSunFill
                     onClick={() => setDarkMode(!darkMode)}
@@ -39,24 +39,24 @@ export default function App() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl dark:text-amber-500">
+            <h2 className="text-5xl py-3 text-teal-500 font-medium md:text-6xl dark:text-amber-500 animate-ping tracking-wider">
               Patricio Tamés
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+            <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
               Junior Full-Stack Developer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-400">
+            <p className="text-md py-6 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
               odit. Dignissimos sapiente voluptas voluptates velit! Possimus
               fugiat reiciendis beatae ad.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
+          <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade">
             <AiFillGithub />
             <AiFillLinkedin />
             <AiFillInstagram />
           </div>
-          <div className="mt-20 mb-10 flex justify-center">
+          <div className="mt-20 mb-10 flex justify-center opacity-0 animate-fade">
             <img
               className="rounded-full w-96"
               src="profilepic.png"
@@ -65,8 +65,8 @@ export default function App() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+          <div className="opacity-0 animate-fade">
+            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
               <span className="text-teal-500 dark:text-amber-500">
@@ -83,7 +83,7 @@ export default function App() {
               perspiciatis.
             </p>
           </div>
-          <div className="lg:flex gap-10 justify-center">
+          <div className="lg:flex gap-10 justify-center opacity-0 animate-fade">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-slate-600">
               <img
                 className="mx-auto"
@@ -152,7 +152,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="opacity-0 animate-fade">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
