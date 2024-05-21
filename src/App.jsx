@@ -1,5 +1,5 @@
 import "./App.css";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useState } from "react";
 
@@ -14,10 +14,17 @@ export default function App() {
             <h1 className="text-xl font-burtons">Patricio Tamés</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
-                />
+                {darkMode ? (
+                  <BsFillSunFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl"
+                  />
+                ) : (
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl"
+                  />
+                )}
               </li>
               <li>
                 <a
