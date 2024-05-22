@@ -41,13 +41,13 @@ export default function App() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-6xl py-3 text-teal-500 font-extralight md:text-7xl dark:text-amber-500 animate-ping tracking-wider font-roboto">
+            <h2 className="text-6xl py-3 text-teal-500 font-bold md:text-7xl dark:text-amber-500 animate-ping font-sans">
               Patricio Tamés
             </h2>
             <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
               Web Developer.
             </h3>
-            <p className="text-md py-6 leading-8 text-gray-800 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
+            <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
               odit. Dignissimos sapiente voluptas voluptates velit! Possimus
               fugiat reiciendis beatae ad.
@@ -69,7 +69,7 @@ export default function App() {
         <section>
           <div className="opacity-0 animate-fade">
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
+            <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
               <span className="text-teal-500 dark:text-amber-500">
                 Consectetur{" "}
@@ -80,7 +80,7 @@ export default function App() {
               </span>{" "}
               deserunt facere animi enim!
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
+            <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
               perspiciatis.
             </p>
@@ -96,7 +96,7 @@ export default function App() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Beautiful Designs
               </h3>
-              <p className="py-2 text-gray-800 dark:text-gray-400">
+              <p className="py-2 text-gray-500 dark:text-gray-400">
                 Creating elegant designs suited for your needs
               </p>
               <h4 className="py-4 text-teal-500 dark:text-amber-500">
@@ -118,7 +118,7 @@ export default function App() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Beautiful Designs
               </h3>
-              <p className="py-2 text-gray-800 dark:text-gray-400">
+              <p className="py-2 text-gray-500 dark:text-gray-400">
                 Creating elegant designs suited for your needs
               </p>
               <h4 className="py-4 text-teal-500 dark:text-amber-500">
@@ -140,7 +140,7 @@ export default function App() {
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Beautiful Designs
               </h3>
-              <p className="py-2 text-gray-800 dark:text-gray-400">
+              <p className="py-2 text-gray-500 dark:text-gray-400">
                 Creating elegant designs suited for your needs
               </p>
               <h4 className="py-4 text-teal-500 dark:text-amber-500">
@@ -157,7 +157,7 @@ export default function App() {
         <section className="opacity-0 animate-fade">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
+            <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
               <span className="text-teal-500 dark:text-amber-500">
                 Consectetur{" "}
@@ -168,7 +168,7 @@ export default function App() {
               </span>{" "}
               deserunt facere animi enim!
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
+            <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
               perspiciatis.
             </p>
