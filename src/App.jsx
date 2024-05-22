@@ -4,7 +4,7 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useState } from "react";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   //Aquí mis proyectos:
 
@@ -174,8 +174,15 @@ export default function App() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 duration-200 hover:scale-105">
-              <img className="rounded-lg object-cover" src="web1.png" alt="" />
+            <div className="group basis-1/3 flex-1 duration-200 hover:scale-105">
+              <h1 className=" bg-black p-2 bg-opacity-40 rounded-md text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-200 text-white z-10">
+                Website
+              </h1>
+              <img
+                className="rounded-lg object-cover group-hover:blur-sm duration-200"
+                src="web1.png"
+                alt=""
+              />
             </div>
             <div className="basis-1/3 flex-1 duration-200 hover:scale-105">
               <img className="rounded-lg object-cover" src="web2.png" alt="" />
