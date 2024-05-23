@@ -13,7 +13,7 @@ export default function App() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section>
           <nav className="py-10 mb-12 flex justify-between opacity-0 animate-slideInFromTop rounded-xl">
-            <h1 className="text-2xl dark:text-white font-roboto hover:scale-110 duration-200">
+            <h1 className="text-xl font-thin dark:text-white font-sans">
               Portfolio
             </h1>
             <ul className="flex items-center">
@@ -32,8 +32,9 @@ export default function App() {
               </li>
               <li className="duration-200 hover:scale-110">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500"
-                  href="#"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500 dark:text-black"
+                  href="https://www.canva.com/design/DAGFYdHGwIo/zdWLCik4aVj_LC3387hGPg/view?utm_content=DAGFYdHGwIo&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                  target="_blank"
                 >
                   Resume
                 </a>
@@ -48,15 +49,27 @@ export default function App() {
               Web Developer.
             </h3>
             <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-              odit. Dignissimos sapiente voluptas voluptates velit! Possimus
-              fugiat reiciendis beatae ad.
+              I’m a junior full-stack developer, proficient in the MERN stack,
+              but also very passionate about learning new technologies that
+              allow me to keep building digital experiences.{" "}
+              {/* All coding projects
+              listed on this site are created from the ground up, starting with
+              basic wireframing all the way up to fully functional applications. */}
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade">
-            <AiFillGithub className="duration-200 hover:scale-125" />
-            <AiFillLinkedin className="duration-200 hover:scale-125" />
-            <AiFillInstagram className="duration-200 hover:scale-125" />
+            <a href="https://github.com/pattames" target="_blank">
+              <AiFillGithub className="duration-200 hover:scale-125" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/patriciotames/"
+              target="_blank"
+            >
+              <AiFillLinkedin className="duration-200 hover:scale-125" />
+            </a>
+            <a href="https://www.instagram.com/pat.tames/" target="_blank">
+              <AiFillInstagram className="duration-200 hover:scale-125" />
+            </a>
           </div>
           <div className="mt-20 mb-10 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 rounded-full max-w-96 mx-auto dark:shadow-none">
             <img
