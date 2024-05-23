@@ -33,6 +33,7 @@ export default {
       },
       fontFamily: {
         burtons: "burtons",
+        roboto: "roboto",
       },
     },
   },
