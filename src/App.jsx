@@ -1,46 +1,19 @@
 import "./App.css";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
+import Navbar from "./components/Navbar";
 
-export default function App() {
-  const [darkMode, setDarkMode] = useState(true);
+function App() {
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
 
   //Aquí mis proyectos:
 
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        <Navbar />
         <section>
-          <nav className="py-10 mb-12 flex justify-between opacity-0 animate-slideInFromTop rounded-xl">
-            <h1 className="text-xl font-thin dark:text-white font-sans">
-              Portfolio
-            </h1>
-            <ul className="flex items-center">
-              <li className="animate-bounceOnce mr-8">
-                {darkMode ? (
-                  <BsFillSunFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="text-white cursor-pointer text-2xl duration-200 hover:scale-125"
-                  />
-                ) : (
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl duration-200 hover:scale-125"
-                  />
-                )}
-              </li>
-              <li className="duration-200 hover:scale-110">
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500 dark:text-black"
-                  href="https://www.canva.com/design/DAGFYdHGwIo/zdWLCik4aVj_LC3387hGPg/view?utm_content=DAGFYdHGwIo&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                  target="_blank"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
           <div className="text-center p-10">
             <h2 className="text-6xl py-3 text-teal-500 font-bold md:text-7xl dark:text-amber-500 animate-ping font-sans">
               Patricio Tamés
@@ -212,3 +185,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
