@@ -11,11 +11,12 @@ export default function Profile() {
           Web Developer.
         </h3>
         <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
-          I’m a junior{" "}
-          <span className="text-teal-500 dark:text-amber-500">full-stack</span>{" "}
-          developer, proficient in the MERN stack, but also very passionate
-          about learning new technologies that allow me to keep building digital
-          experiences.
+          I'm a junior full-stack developer, proficient in the MERN stack and
+          passionate about learning new{" "}
+          <span className="text-teal-500 dark:text-amber-500">
+            technologies
+          </span>{" "}
+          that allow me to keep building digital experiences.
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade">
