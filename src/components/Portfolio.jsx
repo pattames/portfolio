@@ -23,6 +23,7 @@ export default function Portfolio() {
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
         {portfolio.map((project) => (
           <PortfolioItem
+            key={project.title}
             title={project.title}
             imgUrl={project.imgUrl}
             stack={project.stack}
