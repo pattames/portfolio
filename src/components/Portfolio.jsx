@@ -17,8 +17,9 @@ export default function Portfolio() {
           .
         </p>
         <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
-          Technologies used: React for the frontend, and Node.js, Express, and
-          MongoDB for the backend.
+          Important: Due to the use of a free API deployment service, the
+          websites take an initial time of 40 seconds to load all of the data
+          before running smoothly.
         </p>
       </div>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
