@@ -17,7 +17,7 @@ export default function Portfolio() {
           .
         </p>
         <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
-          Important: Due to the use of a free API deployment service, the
+          Important: Due to the use of a free backend deployment service, the
           websites take an initial time of 40 seconds to load all of the data
           before running smoothly.
         </p>
