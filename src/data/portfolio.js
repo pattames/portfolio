@@ -1,13 +1,13 @@
 export default [
   {
-    title: "Petfect Match",
-    imgUrl: "public/petfect_match.png",
+    title: "Pokémon Fights",
+    imgUrl: "pokemonfights175.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
-    link: "https://petfectmatch.netlify.app/",
+    link: "https://pokemonfights.netlify.app/",
   },
   {
-    title: "Prueba2",
-    imgUrl: "web1.png",
+    title: "Petfect Match",
+    imgUrl: "public/petfect_match.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://petfectmatch.netlify.app/",
   },
