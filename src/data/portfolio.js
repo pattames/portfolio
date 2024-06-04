@@ -7,7 +7,7 @@ export default [
   },
   {
     title: "Petfect Match",
-    imgUrl: "public/petfect_match.png",
+    imgUrl: "petfect_match.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://petfectmatch.netlify.app/",
   },
