@@ -1,22 +1,43 @@
 import PortfolioItem from "./PortfolioItem";
 import portfolio from "../data/portfolio";
+import { useContext } from "react";
+import { LangContext } from "../context/LangContext";
 
 export default function Portfolio() {
+  //Contexts
+  const { english } = useContext(LangContext);
+
+  //Dynamic text
+  //English
+  const description1 = "All projects listed on this site are created from the ";
+  const description2 =
+    ", starting with basic wireframing and progressing to fully functional applications.";
+  const description3 = "Technologies used: React for the ";
+  const description4 = " and Node.js, Express, and MongoDB for the ";
+  //Spanish
+  const descripción1 =
+    "Todos los proyectos que aparecen a continuación fueron creados ";
+  const descripción2 =
+    ", comenzando con diagramas básicos y avanzando hasta tener como resultado aplicaciones totalmente funcionales.";
+  const descripción3 = "Tecnologías utilizadas: React para el ";
+  const descripción4 = ", y Node.js, Express y MongoDB para el ";
+
   return (
     <section className="opacity-0 animate-fade">
       <div>
         <h3 className="text-2xl py-1 md:text-3xl dark:text-white">Portfolio</h3>
         <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
-          All projects listed on this site are created from the{" "}
-          <span className="text-teal-500 dark:text-amber-500">ground up</span>,
-          starting with basic wireframing and progressing to fully functional
-          applications.
+          {english ? description1 : descripción1}
+          <span className="text-teal-500 dark:text-amber-500">
+            {english ? "ground up" : "desde cero"}
+          </span>
+          {english ? description2 : descripción2}
         </p>
         {/* En caso de no mostrar las tecnologías en las cartas: */}
         <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
-          Technologies used: React for the{" "}
-          <span className="text-teal-500 dark:text-amber-500">frontend</span>,
-          and Node.js, Express, and MongoDB for the{" "}
+          {english ? description3 : descripción3}
+          <span className="text-teal-500 dark:text-amber-500">frontend</span>
+          {english ? description4 : descripción4}
           <span className="text-teal-500 dark:text-amber-500">backend</span>.
         </p>
         {/* En caso de no pagar backend deployment: */}
