@@ -1,12 +1,18 @@
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { LangContext } from "../context/LangContext";
 
 export default function Navbar() {
+  //Contexts
   const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { english, setEnglish } = useContext(LangContext);
+
   return (
     <nav className="py-10 mb-12 flex justify-between opacity-0 animate-slideInFromTop rounded-xl">
-      <h1 className="text-xl font-thin dark:text-white font-sans">Portfolio</h1>
+      <button className="bg-white" onClick={() => setEnglish(!english)}>
+        Lang
+      </button>
       <ul className="flex items-center">
         <li className="animate-bounceOnce mr-8">
           {darkMode ? (

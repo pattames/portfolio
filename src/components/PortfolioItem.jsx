@@ -10,7 +10,7 @@ export default function PortfolioItem({ title, imgUrl, stack, link }) {
         {title}
       </h1> */}
       {/* Titile above img: */}
-      <h1 className="text-2xl text-center py-3 text-gray-700 tracking-widest dark:text-gray-100">
+      <h1 className="text-2xl md:text-3xl text-center py-3 text-gray-700 tracking-widest dark:text-gray-100">
         {title}
       </h1>
       {/* Deleted group-hover:blur-sm for title above: */}

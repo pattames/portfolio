@@ -5,15 +5,15 @@ export default function Portfolio() {
   return (
     <section className="opacity-0 animate-fade">
       <div>
-        <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-        <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
+        <h3 className="text-2xl py-1 md:text-3xl dark:text-white">Portfolio</h3>
+        <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
           All projects listed on this site are created from the{" "}
           <span className="text-teal-500 dark:text-amber-500">ground up</span>,
           starting with basic wireframing and progressing to fully functional
           applications.
         </p>
         {/* En caso de no mostrar las tecnologías en las cartas: */}
-        <p className="text-md py-2 leading-8 text-gray-500 dark:text-gray-400">
+        <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
           Technologies used: React for the{" "}
           <span className="text-teal-500 dark:text-amber-500">frontend</span>,
           and Node.js, Express, and MongoDB for the{" "}
