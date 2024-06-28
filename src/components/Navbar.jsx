@@ -2,18 +2,17 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { LangContext } from "../context/LangContext";
+import Switch from "./Switch";
 
 export default function Navbar() {
   //Contexts
   const { darkMode, setDarkMode } = useContext(ThemeContext);
-  const { english, setEnglish } = useContext(LangContext);
+  const { english } = useContext(LangContext);
 
   return (
-    <nav className="py-10 mb-12 flex justify-between opacity-0 animate-slideInFromTop rounded-xl">
-      <button className="bg-white" onClick={() => setEnglish(!english)}>
-        Lang
-      </button>
-      <ul className="flex items-center">
+    <nav className="py-10 flex justify-center opacity-0 animate-slideInFromTop rounded-xl flex-wrap gap-10 sm:mb-12 sm:justify-between sm:flex-nowrap">
+      <Switch />
+      <ul className="flex items-center gap-24 sm:gap-0">
         <li className="animate-bounceOnce mr-8">
           {darkMode ? (
             <BsFillSunFill
@@ -29,11 +28,11 @@ export default function Navbar() {
         </li>
         <li className="duration-200 hover:scale-110">
           <a
-            className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500 dark:text-black"
+            className="flex justify-center bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500 dark:text-black min-w-20"
             href="https://www.canva.com/design/DAGFYdHGwIo/zdWLCik4aVj_LC3387hGPg/view?utm_content=DAGFYdHGwIo&utm_campaign=designshare&utm_medium=link&utm_source=editor"
             target="_blank"
           >
-            Resume
+            {english ? "Resume" : "CV"}
           </a>
         </li>
       </ul>
