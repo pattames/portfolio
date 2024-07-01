@@ -6,18 +6,35 @@ export default function Profile() {
   //Contexts
   const { english } = useContext(LangContext);
 
-  //Dynamic text
-  //Job title
+  //Dynamic text for translation
+  //English
   const jobTitle = "Web Developer.";
+  const introduction = () => {
+    const span = (
+      <span className="text-teal-500 dark:text-amber-500">technologies</span>
+    );
+    return (
+      <>
+        I'm a junior full-stack developer, proficient in the MERN stack and
+        passionate about learning new {span} that allow me to keep building
+        digital experiences.
+      </>
+    );
+  };
+  //Spanish
   const tituloProfesional = "Desarrollador Web.";
-  //Introduction
-  const introduction1 =
-    "I'm a junior full-stack developer, proficient in the MERN stack and passionate about learning new ";
-  const introduction2 = " that allow me to keep building digital experiences.";
-  const introducción1 =
-    "Desarrollador full stack junior, competente en el MERN stack y apasionado por aprender nuevas ";
-  const introducción2 =
-    " que me permitan seguir construyendo experiencias digitales.";
+  const introducción = () => {
+    const span = (
+      <span className="text-teal-500 dark:text-amber-500">tecnologías</span>
+    );
+    return (
+      <>
+        Desarrollador full stack junior, competente en el MERN stack y
+        apasionado por aprender nuevas {span} que me permitan seguir
+        construyendo experiencias digitales.
+      </>
+    );
+  };
 
   return (
     <section>
@@ -28,12 +45,8 @@ export default function Profile() {
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
           {english ? jobTitle : tituloProfesional}
         </h3>
-        <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
-          {english ? introduction1 : introducción1}
-          <span className="text-teal-500 dark:text-amber-500">
-            {english ? "technologies" : "tecnologías"}
-          </span>
-          {english ? introduction2 : introducción2}
+        <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-2xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
+          {english ? introduction() : introducción()}
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade">
