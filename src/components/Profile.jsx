@@ -15,9 +15,12 @@ export default function Profile() {
     );
     return (
       <>
-        I'm a junior full-stack developer, proficient in the MERN stack and
+        {/* I'm a junior full-stack developer, proficient in the MERN stack and
         passionate about learning new {span} that allow me to keep building
-        digital experiences.
+        digital experiences. */}
+        I'm a junior full-stack developer, proficient in the use of
+        JavaScript-based {span} and passionate about learning new tools that
+        allow me to keep building digital experiences.
       </>
     );
   };
@@ -27,11 +30,17 @@ export default function Profile() {
     const span = (
       <span className="text-teal-500 dark:text-amber-500">tecnologías</span>
     );
+    const span2 = (
+      <span className="text-teal-500 dark:text-amber-500">construyendo</span>
+    );
     return (
       <>
-        Desarrollador full stack junior, competente en el MERN stack y
+        {/* Desarrollador full stack junior, competente en el uso del stack MERN y
         apasionado por aprender nuevas {span} que me permitan seguir
-        construyendo experiencias digitales.
+        construyendo experiencias digitales. */}
+        Desarrollador full stack junior, competente en el uso de {span} basadas
+        en JavaScript y apasionado por aprender nuevas herramientas que me
+        permitan seguir {span2} aplicaciones y sitios web.
       </>
     );
   };
@@ -45,7 +54,7 @@ export default function Profile() {
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
           {english ? jobTitle : tituloProfesional}
         </h3>
-        <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-2xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
+        <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
           {english ? introduction() : introducción()}
         </p>
       </div>
