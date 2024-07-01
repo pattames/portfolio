@@ -11,16 +11,19 @@ export default function Profile() {
   const jobTitle = "Web Developer.";
   const introduction = () => {
     const span = (
-      <span className="text-teal-500 dark:text-amber-500">technologies</span>
+      <span className="text-teal-500 dark:text-amber-500">proficient</span>
+    );
+    const span2 = (
+      <span className="text-teal-500 dark:text-amber-500">building</span>
     );
     return (
       <>
         {/* I'm a junior full-stack developer, proficient in the MERN stack and
-        passionate about learning new {span} that allow me to keep building
+        passionate about learning new technologies that allow me to keep building
         digital experiences. */}
-        I'm a junior full-stack developer, proficient in the use of
-        JavaScript-based {span} and passionate about learning new tools that
-        allow me to keep building digital experiences.
+        I'm a junior full-stack developer, {span} in the use of JavaScript-based
+        technologies and passionate about learning new tools that allow me to
+        keep {span2} digital experiences.
       </>
     );
   };
