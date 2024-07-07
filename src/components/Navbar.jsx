@@ -9,6 +9,12 @@ export default function Navbar() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
   const { english } = useContext(LangContext);
 
+  //Variables
+  const linkResume =
+    "https://www.canva.com/design/DAGFYdHGwIo/zdWLCik4aVj_LC3387hGPg/view?utm_content=DAGFYdHGwIo&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+  const linkCV =
+    "https://www.canva.com/design/DAGKLPndbJs/Dng5_QlkFOtYqUWdhRrQPA/view?utm_content=DAGKLPndbJs&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+
   return (
     <nav className="py-10 flex justify-center opacity-0 animate-slideInFromTop rounded-xl flex-wrap gap-10 sm:mb-12 sm:justify-between sm:flex-nowrap">
       <Switch />
@@ -29,7 +35,7 @@ export default function Navbar() {
         <li className="duration-200 hover:scale-110">
           <a
             className="flex justify-center bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500 dark:text-black min-w-20"
-            href="https://www.canva.com/design/DAGFYdHGwIo/zdWLCik4aVj_LC3387hGPg/view?utm_content=DAGFYdHGwIo&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            href={english ? linkResume : linkCV}
             target="_blank"
           >
             {english ? "Resume" : "CV"}
