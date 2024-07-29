@@ -50,14 +50,14 @@ export default function Profile() {
 
   return (
     <section>
-      <div className="text-center p-10">
+      <div className="text-center py-10">
         <h2 className="text-5xl py-3 text-teal-500 font-bold md:text-7xl dark:text-amber-500 animate-ping font-sans">
           Patricio Tamés
         </h2>
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
           {english ? jobTitle : tituloProfesional}
         </h3>
-        <p className="text-md py-6 leading-8 text-gray-500 md:text-xl max-w-3xl mx-auto dark:text-gray-400 opacity-0 animate-fade">
+        <p className="text-md py-6 px-4 leading-8 text-gray-500 md:text-xl max-w-4xl mx-auto dark:text-gray-400 opacity-0 animate-fade border-b-2 border-r-4 border-gray-400">
           {english ? introduction() : introducción()}
         </p>
       </div>
