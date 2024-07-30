@@ -4,12 +4,6 @@ import { LangContext } from "../context/LangContext";
 export default function PortfolioItem({ title, imgUrl, stack, link }) {
   const { english } = useContext(LangContext);
 
-  //Dynamic text based on language
-  //English
-  const techTitle = "Technologies used:";
-  //Spanish
-  const tituloTec = "Tecnologías utilizadas:";
-
   return (
     <a
       href={link}
@@ -19,7 +13,7 @@ export default function PortfolioItem({ title, imgUrl, stack, link }) {
       <h1 className="text-2xl md:text-3xl text-center py-3 text-gray-700 tracking-widest dark:text-gray-100">
         {title}
       </h1>
-      <div className="p-8 pt-0 border-b-2 border-r-4 border-gray-400">
+      <div className="p-6 pt-0 border-b-2 border-r-4 border-gray-400 sm:p-8">
         <img
           className="object-cover duration-200 shadow-2xl"
           loading="lazy"
@@ -27,12 +21,14 @@ export default function PortfolioItem({ title, imgUrl, stack, link }) {
           alt={title}
         />
         <div className="my-3 md:my-5">
-          <h2 className="text-xl text-gray-600 md:tracking-wide md:text-2xl dark:text-gray-100">
-            {english ? techTitle : tituloTec}
+          <h2 className="text-xl text-gray-600 ml-2 py-1 md:tracking-wide md:text-2xl dark:text-gray-100">
+            {english ? "Technologies used:" : "Tecnologías utilizadas:"}
           </h2>
-          <ul>
+          <ul className="text-sm text-gray-500 dark:text-gray-400 flex flex-wrap sm:text-lg">
             {stack.map((technologie) => (
-              <li>{technologie}</li>
+              <li className="border-2 border-gray-400 rounded-md m-2 p-2 text-center">
+                {technologie}
+              </li>
             ))}
           </ul>
         </div>
