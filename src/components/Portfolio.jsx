@@ -88,23 +88,23 @@ export default function Portfolio() {
 
   return (
     <section className="opacity-0 animate-fade">
-      <div>
-        <h3 className="text-2xl py-1 md:text-3xl dark:text-white">
+      <div className="max-w-4xl text-center mx-auto">
+        <h3 className="text-2xl py-1 underline underline-offset-8 md:text-3xl text-gray-700 dark:text-gray-100">
           {english ? "Portfolio" : "Portafolio"}
         </h3>
-        <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
+        <p className="text-md py-4 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
           {english ? description1() : descripción1()}
         </p>
         {/* En caso de no mostrar las tecnologías en las cartas: */}
-        <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
+        {/* <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
           {english ? description2() : descripción2()}
-        </p>
+        </p> */}
         {/* En caso de no pagar backend deployment: */}
         {/* <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
           {english ? description3() : descripción3()}
         </p> */}
       </div>
-      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+      <div className="flex flex-col gap-10 py-7 md:flex-row md:flex-wrap max-w-7xl mx-auto">
         {portfolio.map((project) => (
           <PortfolioItem
             key={project.title}

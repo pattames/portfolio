@@ -16,7 +16,7 @@ export default function Navbar() {
     "https://www.canva.com/design/DAGKLPndbJs/Dng5_QlkFOtYqUWdhRrQPA/view?utm_content=DAGKLPndbJs&utm_campaign=designshare&utm_medium=link&utm_source=editor";
 
   return (
-    <nav className="py-10 flex justify-center opacity-0 animate-slideInFromTop rounded-xl flex-wrap gap-10 sm:mb-12 sm:justify-between sm:flex-nowrap">
+    <nav className="py-10 flex justify-center opacity-0 animate-slideInFromTop rounded-xl flex-wrap gap-8 sm:mb-12 sm:justify-between sm:flex-nowrap">
       <Switch />
       <ul className="flex items-center gap-24 sm:gap-0">
         <li className="animate-bounceOnce mr-8">

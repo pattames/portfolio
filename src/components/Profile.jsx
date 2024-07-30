@@ -18,9 +18,6 @@ export default function Profile() {
     );
     return (
       <>
-        {/* I'm a junior full-stack developer, proficient in the MERN stack and
-        passionate about learning new technologies that allow me to keep building
-        digital experiences. */}
         I'm a junior full-stack developer, {span} in the use of JavaScript-based
         technologies and passionate about learning new tools that allow me to
         keep {span2} digital experiences.
@@ -38,9 +35,6 @@ export default function Profile() {
     );
     return (
       <>
-        {/* Desarrollador full stack junior, competente en el uso del stack MERN y
-        apasionado por aprender nuevas {span} que me permitan seguir
-        construyendo experiencias digitales. */}
         Desarrollador full stack junior, competente en el uso de {span} basadas
         en JavaScript y apasionado por aprender nuevas herramientas que me
         permitan seguir {span2} aplicaciones y sitios web.
@@ -50,8 +44,8 @@ export default function Profile() {
 
   return (
     <section>
-      <div className="text-center py-10">
-        <h2 className="text-5xl py-3 text-teal-500 font-bold md:text-7xl dark:text-amber-500 animate-ping font-sans">
+      <div className="text-center pb-8 pt-5 sm:py-10">
+        <h2 className="text-5xl py-3 text-teal-500 font-bold animate-ping font-sans md:text-7xl dark:text-amber-500">
           Patricio Tamés
         </h2>
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
@@ -61,7 +55,7 @@ export default function Profile() {
           {english ? introduction() : introducción()}
         </p>
       </div>
-      <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade">
+      <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade mb-20">
         <a href="https://github.com/pattames" target="_blank">
           <AiFillGithub className="duration-200 hover:scale-125" />
         </a>
@@ -72,13 +66,13 @@ export default function Profile() {
           <AiFillInstagram className="duration-200 hover:scale-125" />
         </a>
       </div>
-      <div className="mt-20 mb-10 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 rounded-full max-w-96 mx-auto dark:shadow-none">
+      {/* <div className="mb-10 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 rounded-full max-w-96 mx-auto dark:shadow-none">
         <img
           className="rounded-full w-96"
           src="profilepic.png"
           alt="Patricio's profile picture"
         />
-      </div>
+      </div> */}
     </section>
   );
 }

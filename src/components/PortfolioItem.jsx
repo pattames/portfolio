@@ -1,24 +1,42 @@
+import { useContext } from "react";
+import { LangContext } from "../context/LangContext";
+
 export default function PortfolioItem({ title, imgUrl, stack, link }) {
+  const { english } = useContext(LangContext);
+
+  //Dynamic text based on language
+  //English
+  const techTitle = "Technologies used:";
+  //Spanish
+  const tituloTec = "Tecnologías utilizadas:";
+
   return (
     <a
       href={link}
       target="_blank"
-      className="rounded-xl group basis-1/3 flex-1 duration-200 hover:scale-105"
+      className="group basis-1/3 flex-1 duration-200 hover:scale-105"
     >
-      {/* Title over img: */}
-      {/* <h1 className="bg-white p-3 bg-opacity-60 rounded-md text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-200 text-black z-10 tracking-wide">
-        {title}
-      </h1> */}
-      {/* Titile above img: */}
       <h1 className="text-2xl md:text-3xl text-center py-3 text-gray-700 tracking-widest dark:text-gray-100">
         {title}
       </h1>
-      {/* Deleted group-hover:blur-sm for title above: */}
-      <img
-        className="rounded-xl object-cover duration-200 shadow-2xl"
-        src={imgUrl}
-        alt={title}
-      />
+      <div className="p-8 pt-0 border-b-2 border-r-4 border-gray-400">
+        <img
+          className="object-cover duration-200 shadow-2xl"
+          loading="lazy"
+          src={imgUrl}
+          alt={title}
+        />
+        <div className="my-3 md:my-5">
+          <h2 className="text-xl text-gray-600 md:tracking-wide md:text-2xl dark:text-gray-100">
+            {english ? techTitle : tituloTec}
+          </h2>
+          <ul>
+            {stack.map((technologie) => (
+              <li>{technologie}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </a>
   );
 }
