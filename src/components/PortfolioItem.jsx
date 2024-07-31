@@ -16,7 +16,6 @@ export default function PortfolioItem({ title, imgUrl, stack, link }) {
       <div className="p-6 pt-0 border-b-2 border-r-4 border-gray-400 sm:p-8">
         <img
           className="object-cover duration-200 shadow-2xl"
-          loading="lazy"
           src={imgUrl}
           alt={title}
         />
