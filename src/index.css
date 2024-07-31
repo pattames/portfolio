@@ -6,3 +6,8 @@
   font-family: "burtons";
   src: url(../public/Burtons.otf);
 }
+
+/* Smooth darkmode transition */
+/* * {
+  @apply transition-colors duration-200;
+} */
