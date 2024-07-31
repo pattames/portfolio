@@ -27,8 +27,8 @@ function App() {
   }, []);
 
   return (
-    <div className={darkMode ? "dark bg-gray-900" : "light bg-white"}>
-      <main className="px-10 md:px-20 lg:px-40">
+    <div className={darkMode ? "dark" : ""}>
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <Navbar />
         <Profile />
         {/* <Services /> */}
