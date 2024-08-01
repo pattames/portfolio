@@ -104,7 +104,7 @@ export default function Portfolio() {
           {english ? description3() : descripción3()}
         </p> */}
       </div>
-      <div className="flex flex-col gap-10 py-7 md:flex-row md:flex-wrap max-w-7xl mx-auto">
+      <div className="flex flex-col gap-10 py-7 justify-center md:flex-row md:flex-wrap max-w-7xl mx-auto">
         {portfolio.map((project) => (
           <PortfolioItem
             key={project.title}

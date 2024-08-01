@@ -8,7 +8,7 @@ export default function PortfolioItem({ title, imgUrl, stack, link }) {
     <a
       href={link}
       target="_blank"
-      className="group basis-1/3 flex-1 duration-200 hover:scale-105"
+      className="group basis-1/3 flex-1 duration-200 hover:scale-105 max-w-[39rem]"
     >
       <h1 className="text-2xl md:text-3xl text-center py-3 text-gray-700 tracking-widest dark:text-gray-100">
         {title}
