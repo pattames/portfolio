@@ -3,7 +3,7 @@ export const portfolio = [
     id: 1,
     title: "Petfect Match",
     description: "Adopt or Rehome a Pet.",
-    descripcion: "Adopta o da en adopción una mascota.",
+    descripcion: "Adopta o da una mascota en adopción.",
     imgUrl: "petfect_match.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://petfectmatch.netlify.app/",
