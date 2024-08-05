@@ -17,7 +17,7 @@ export default function PortfolioItem({
       target="_blank"
       className="group basis-1/3 flex-1 max-w-[39rem] text-gray-700 dark:text-gray-100 sm:duration-200 sm:hover:scale-105"
     >
-      <h1 className="text-2xl text-center py-3 tracking-widest group-hover:underline underline-offset-8 md:text-3xl">
+      <h1 className="text-2xl text-center py-3 tracking-widest underline-offset-8 sm:group-hover:underline md:text-3xl">
         {title}
       </h1>
       <div className="p-6 pt-2 border-b-2 border-r-4 border-gray-400 sm:p-8 sm:pt-4">
