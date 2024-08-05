@@ -57,13 +57,13 @@ export default function Profile() {
       </div>
       <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade mb-20">
         <a href="https://github.com/pattames" target="_blank">
-          <AiFillGithub className="duration-200 hover:scale-125" />
+          <AiFillGithub className="hover:text-gray-900 hover:dark:text-white sm:duration-200 sm:hover:scale-125" />
         </a>
         <a href="https://www.linkedin.com/in/patriciotames/" target="_blank">
-          <AiFillLinkedin className="duration-200 hover:scale-125" />
+          <AiFillLinkedin className="hover:text-gray-900 hover:dark:text-white sm:duration-200 sm:hover:scale-125" />
         </a>
         <a href="https://www.instagram.com/pat.tames/" target="_blank">
-          <AiFillInstagram className="duration-200 hover:scale-125" />
+          <AiFillInstagram className="hover:text-gray-900 hover:dark:text-white sm:duration-200 sm:hover:scale-125" />
         </a>
       </div>
       {/* <div className="mb-10 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 rounded-full max-w-96 mx-auto dark:shadow-none">

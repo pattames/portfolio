@@ -1,5 +1,5 @@
 import PortfolioItem from "./PortfolioItem";
-import portfolio from "../data/portfolio";
+import { portfolio } from "../data/portfolio";
 import { useContext } from "react";
 import { LangContext } from "../context/LangContext";
 
@@ -107,8 +107,10 @@ export default function Portfolio() {
       <div className="flex flex-col gap-10 py-7 justify-center md:flex-row md:flex-wrap max-w-7xl mx-auto">
         {portfolio.map((project) => (
           <PortfolioItem
-            key={project.title}
+            key={project.id}
             title={project.title}
+            description={project.description}
+            descripcion={project.descripcion}
             imgUrl={project.imgUrl}
             stack={project.stack}
             link={project.link}

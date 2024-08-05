@@ -1,18 +1,36 @@
-export default [
+export const portfolio = [
   {
+    id: 1,
     title: "Petfect Match",
+    description: "Adopt or Rehome a Pet.",
+    descripcion: "Adopta o da en adopción una mascota.",
     imgUrl: "petfect_match.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://petfectmatch.netlify.app/",
   },
   {
+    id: 2,
     title: "Pokémon Fights",
+    description: "Fight and catch 'em all!",
+    descripcion: "¡Pelea y atrápalos a todos!",
     imgUrl: "pokemonfights175.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     link: "https://pokemonfights.netlify.app/",
   },
   {
+    id: 3,
+    title: "Fernanda Familiar",
+    description: "View the latest news.",
+    descripcion: "Entérate de las últimas noticias.",
+    imgUrl: "fernandafamiliar125.png",
+    stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
+    link: "https://fernandafamiliar.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Solley Becker",
+    description: "Get the best legal advice.",
+    descripcion: "Recibe la mejor asesoría legal.",
     imgUrl: "solleybecker175.png",
     stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
     link: "https://solleybecker.vercel.app/",
