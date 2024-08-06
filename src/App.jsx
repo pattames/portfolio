@@ -29,15 +29,15 @@ function App() {
   //Sí darkMode es true, agrega la clase "dark" al html tag
   useEffect(() => {
     if (darkMode === true) {
-      document.querySelector("html").classList.add("dark");
+      document.querySelector("html").setAttribute("data-theme", "dark");
     } else {
-      document.querySelector("html").classList.remove("dark");
+      document.querySelector("html").setAttribute("data-theme", "light");
     }
   }, [darkMode]);
 
   return (
     <div>
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="px-10 md:px-20 lg:px-40">
         <Navbar />
         <Profile />
         {/* <Services /> */}

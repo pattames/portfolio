@@ -35,6 +35,9 @@ export default {
       },
     },
   },
-  plugins: [],
-  darkMode: "selector",
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false,
+  },
+  darkMode: ["class", '[data-theme="dark"]'],
 };
