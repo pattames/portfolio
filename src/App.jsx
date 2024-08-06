@@ -26,7 +26,7 @@ function App() {
     };
   }, []);
 
-  //Sí darkMode es true, agrega la clase "dark" al html tag
+  //Sí darkMode es true, agrega "dark" al data-theme, si no "light"
   useEffect(() => {
     if (darkMode === true) {
       document.querySelector("html").setAttribute("data-theme", "dark");
