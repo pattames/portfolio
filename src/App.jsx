@@ -27,13 +27,13 @@ function App() {
   }, []);
 
   //Sí darkMode es true, agrega la clase "dark" al html tag
-  useEffect(() => {
-    if (darkMode === true) {
-      document.querySelector("html").classList.add("dark");
-    } else {
-      document.querySelector("html").classList.remove("dark");
-    }
-  }, [darkMode]);
+  // useEffect(() => {
+  //   if (darkMode === true) {
+  //     document.querySelector("html").classList.add("dark");
+  //   } else {
+  //     document.querySelector("html").classList.remove("dark");
+  //   }
+  // }, [darkMode]);
 
   return (
     <div>
