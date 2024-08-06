@@ -27,16 +27,16 @@ function App() {
   }, []);
 
   //Sí darkMode es true, agrega la clase "dark" al html tag
-  // useEffect(() => {
-  //   if (darkMode === true) {
-  //     document.querySelector("html").classList.add("dark");
-  //   } else {
-  //     document.querySelector("html").classList.remove("dark");
-  //   }
-  // }, [darkMode]);
+  useEffect(() => {
+    if (darkMode === true) {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [darkMode]);
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <Navbar />
         <Profile />
