@@ -51,6 +51,13 @@ export default function Profile() {
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
           {english ? jobTitle : tituloProfesional}
         </h3>
+        {/* <div className="my-6 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 max-w-96 mx-auto dark:shadow-none">
+          <img
+            className="rounded-xl w-72"
+            src="profilepic.png"
+            alt="Patricio's profile picture"
+          />
+        </div> */}
         <p className="text-md py-6 px-4 leading-8 text-gray-500 md:text-xl max-w-4xl mx-auto dark:text-gray-400 opacity-0 animate-fade border-b-2 border-r-4 border-gray-400">
           {english ? introduction() : introducción()}
         </p>
@@ -66,13 +73,6 @@ export default function Profile() {
           <AiFillInstagram className="hover:text-gray-900 hover:dark:text-white sm:duration-200 sm:hover:scale-125" />
         </a>
       </div>
-      {/* <div className="mb-10 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 rounded-full max-w-96 mx-auto dark:shadow-none">
-        <img
-          className="rounded-full w-96"
-          src="profilepic.png"
-          alt="Patricio's profile picture"
-        />
-      </div> */}
     </section>
   );
 }
