@@ -4,7 +4,6 @@ import { LangContext } from "../context/LangContext";
 export default function PortfolioItem({
   title,
   description,
-  descripcion,
   type,
   stack,
   imgUrl,
@@ -31,7 +30,7 @@ export default function PortfolioItem({
           alt={title}
         />
         <p className="text-md my-3 text-gray-500 dark:text-gray-400 md:my-5 sm:text-xl">
-          {english ? description : descripcion}
+          {english ? description.english : description.spanish}
         </p>
         <div className="my-3 md:my-5">
           <h2 className="text-xl text-gray-600 py-1 md:tracking-wide md:text-2xl dark:text-gray-100">

@@ -44,7 +44,6 @@ export default function Portfolio() {
             key={project.id}
             title={project.title}
             description={project.description}
-            descripcion={project.descripcion}
             type={project.type}
             stack={project.stack}
             imgUrl={project.imgUrl}

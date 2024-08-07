@@ -2,8 +2,10 @@ export const portfolio = [
   {
     id: 1,
     title: "Petfect Match",
-    description: "Adopt or Rehome a Pet.",
-    descripcion: "Adopta o da una mascota en adopción.",
+    description: {
+      english: "Adopt or Rehome a Pet.",
+      spanish: "Adopta o da una mascota en adopción.",
+    },
     type: "Full-Stack",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     imgUrl: "petfect_match.png",
@@ -12,8 +14,10 @@ export const portfolio = [
   {
     id: 2,
     title: "Pokémon Fights",
-    description: "Fight and catch 'em all!",
-    descripcion: "¡Pelea y atrápalos a todos!",
+    description: {
+      english: "Fight and catch 'em all!",
+      spanish: "¡Pelea y atrápalos a todos!",
+    },
     type: "Full-Stack",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     imgUrl: "pokemonfights175.png",
@@ -22,8 +26,10 @@ export const portfolio = [
   {
     id: 3,
     title: "Fernanda Familiar",
-    description: "View the latest news.",
-    descripcion: "Entérate de las últimas noticias.",
+    description: {
+      english: "View the latest news.",
+      spanish: "Entérate de las últimas noticias.",
+    },
     type: "Front-End",
     stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
     imgUrl: "fernandafamiliar125.png",
@@ -32,8 +38,10 @@ export const portfolio = [
   {
     id: 4,
     title: "Solley Becker",
-    description: "Get the best legal advice.",
-    descripcion: "Recibe la mejor asesoría legal.",
+    description: {
+      english: "Get the best legal advice.",
+      spanish: "Recibe la mejor asesoría legal.",
+    },
     type: "Front-End",
     stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
     imgUrl: "solleybecker175.png",
