@@ -58,11 +58,11 @@ export default function Profile() {
             alt="Patricio's profile picture"
           />
         </div> */}
-        <p className="text-md py-6 px-4 leading-8 text-gray-500 md:text-xl max-w-4xl mx-auto dark:text-gray-400 opacity-0 animate-fade border-b-2 border-r-4 border-gray-400">
+        <p className="text-md py-6 px-4 leading-8 text-gray-500 md:text-xl max-w-6xl mx-auto dark:text-gray-400 opacity-0 animate-fade border-b-2 border-r-4 border-gray-400">
           {english ? introduction() : introducción()}
         </p>
       </div>
-      <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-300 opacity-0 animate-fade mb-20">
+      <div className="text-5xl flex justify-center gap-12 text-gray-600 opacity-0 animate-fade mb-20 dark:text-gray-300 sm:gap-16">
         <a href="https://github.com/pattames" target="_blank">
           <AiFillGithub className="hover:text-gray-900 hover:dark:text-white sm:duration-200 sm:hover:scale-125" />
         </a>

@@ -5,8 +5,9 @@ export default function PortfolioItem({
   title,
   description,
   descripcion,
-  imgUrl,
+  type,
   stack,
+  imgUrl,
   link,
 }) {
   const { english } = useContext(LangContext);
@@ -17,9 +18,12 @@ export default function PortfolioItem({
       target="_blank"
       className="group basis-1/3 flex-1 max-w-[39rem] text-gray-700 dark:text-gray-100 sm:duration-200 sm:hover:scale-105"
     >
-      <h1 className="text-2xl text-center py-3 tracking-widest md:text-3xl">
+      <h1 className="text-2xl text-center py-1 tracking-widest md:text-3xl">
         {title}
       </h1>
+      <h3 className="text-center pb-1 text-md text-gray-500 dark:text-gray-400 sm:text-xl">
+        {type}
+      </h3>
       <div className="p-6 pt-2 border-b-2 border-r-4 border-gray-400 sm:p-8 sm:pt-4">
         <img
           className="object-cover duration-200 shadow-2xl"

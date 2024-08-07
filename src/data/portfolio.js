@@ -4,8 +4,9 @@ export const portfolio = [
     title: "Petfect Match",
     description: "Adopt or Rehome a Pet.",
     descripcion: "Adopta o da una mascota en adopción.",
-    imgUrl: "petfect_match.png",
+    type: "Full-Stack",
     stack: ["React", "Node.js", "Express", "MongoDB"],
+    imgUrl: "petfect_match.png",
     link: "https://petfectmatch.netlify.app/",
   },
   {
@@ -13,8 +14,9 @@ export const portfolio = [
     title: "Pokémon Fights",
     description: "Fight and catch 'em all!",
     descripcion: "¡Pelea y atrápalos a todos!",
-    imgUrl: "pokemonfights175.png",
+    type: "Full-Stack",
     stack: ["React", "Node.js", "Express", "MongoDB"],
+    imgUrl: "pokemonfights175.png",
     link: "https://pokemonfights.netlify.app/",
   },
   {
@@ -22,8 +24,9 @@ export const portfolio = [
     title: "Fernanda Familiar",
     description: "View the latest news.",
     descripcion: "Entérate de las últimas noticias.",
-    imgUrl: "fernandafamiliar125.png",
+    type: "Front-End",
     stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
+    imgUrl: "fernandafamiliar125.png",
     link: "https://fernandafamiliar.vercel.app/",
   },
   {
@@ -31,8 +34,9 @@ export const portfolio = [
     title: "Solley Becker",
     description: "Get the best legal advice.",
     descripcion: "Recibe la mejor asesoría legal.",
-    imgUrl: "solleybecker175.png",
+    type: "Front-End",
     stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
+    imgUrl: "solleybecker175.png",
     link: "https://solleybecker.vercel.app/",
   },
 ];

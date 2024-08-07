@@ -88,7 +88,7 @@ export default function Portfolio() {
 
   return (
     <section className="opacity-0 animate-fade">
-      <div className="max-w-4xl text-center mx-auto">
+      <div className="max-w-6xl text-center mx-auto sm:text-left">
         <h3 className="text-2xl py-1 underline underline-offset-8 md:text-3xl text-gray-700 dark:text-gray-100">
           {english ? "Portfolio" : "Portafolio"}
         </h3>
@@ -111,8 +111,9 @@ export default function Portfolio() {
             title={project.title}
             description={project.description}
             descripcion={project.descripcion}
-            imgUrl={project.imgUrl}
+            type={project.type}
             stack={project.stack}
+            imgUrl={project.imgUrl}
             link={project.link}
           />
         ))}
