@@ -1,45 +1,16 @@
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useContext } from "react";
 import { LangContext } from "../context/LangContext";
+import parse from "html-react-parser";
 
 export default function Profile() {
   //Contexts
   const { english } = useContext(LangContext);
 
   //Dynamic text for translation
-  //English
-  const jobTitle = "Web Developer.";
-  const introduction = () => {
-    const span = (
-      <span className="text-teal-500 dark:text-amber-500">proficient</span>
-    );
-    const span2 = (
-      <span className="text-teal-500 dark:text-amber-500">building</span>
-    );
-    return (
-      <>
-        I'm a junior full-stack developer, {span} in the use of JavaScript-based
-        technologies and passionate about learning new tools that allow me to
-        keep {span2} digital experiences.
-      </>
-    );
-  };
-  //Spanish
-  const tituloProfesional = "Desarrollador Web.";
-  const introducción = () => {
-    const span = (
-      <span className="text-teal-500 dark:text-amber-500">tecnologías</span>
-    );
-    const span2 = (
-      <span className="text-teal-500 dark:text-amber-500">construyendo</span>
-    );
-    return (
-      <>
-        Desarrollador full stack junior, competente en el uso de {span} basadas
-        en JavaScript y apasionado por aprender nuevas herramientas que me
-        permitan seguir {span2} aplicaciones y sitios web.
-      </>
-    );
+  const profileDescription = {
+    english: `I'm a junior full-stack developer, <span className="text-teal-500 dark:text-amber-500">proficient</span> in the use of JavaScript-based technologies and passionate about learning new tools that allow me to keep <span className="text-teal-500 dark:text-amber-500">building</span> digital experiences.`,
+    spanish: `Desarrollador full stack junior, competente en el uso de <span className="text-teal-500 dark:text-amber-500">tecnologías</span> basadas en JavaScript y apasionado por aprender nuevas herramientas que me permitan seguir construyendo <span className="text-teal-500 dark:text-amber-500">aplicaciones</span> y sitios web.`,
   };
 
   return (
@@ -49,7 +20,7 @@ export default function Profile() {
           Patricio Tamés
         </h2>
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
-          {english ? jobTitle : tituloProfesional}
+          {english ? "Web Developer." : "Desarrollador Web."}
         </h3>
         {/* <div className="my-6 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 max-w-96 mx-auto dark:shadow-none">
           <img
@@ -59,7 +30,9 @@ export default function Profile() {
           />
         </div> */}
         <p className="text-md py-6 px-4 leading-8 text-gray-500 md:text-xl max-w-6xl mx-auto dark:text-gray-400 opacity-0 animate-fade border-b-2 border-r-4 border-gray-400">
-          {english ? introduction() : introducción()}
+          {english
+            ? parse(profileDescription.english)
+            : parse(profileDescription.spanish)}
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-12 text-gray-600 opacity-0 animate-fade mb-20 dark:text-gray-300 sm:gap-16">

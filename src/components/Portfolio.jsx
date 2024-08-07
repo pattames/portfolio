@@ -2,88 +2,24 @@ import PortfolioItem from "./PortfolioItem";
 import { portfolio } from "../data/portfolio";
 import { useContext } from "react";
 import { LangContext } from "../context/LangContext";
+import parse from "html-react-parser";
 
 export default function Portfolio() {
   //Contexts
   const { english } = useContext(LangContext);
 
   //Dynamic text for translation
-  //English
-  const description1 = () => {
-    const span = (
-      <span className="text-teal-500 dark:text-amber-500">ground up</span>
-    );
-    return (
-      <>
-        All projects listed on this site are created from the {span}, starting
-        with basic wireframing and progressing to fully functional applications.
-      </>
-    );
+  const portfolioDescription = {
+    english:
+      'All projects listed on this site are created from the <span className="text-teal-500 dark:text-amber-500">ground up,</span> starting with basic wireframing and progressing to fully functional applications.',
+    spanish:
+      'Todos los proyectos que aparecen a continuación fueron creados <span className="text-teal-500 dark:text-amber-500">desde cero,</span> comenzando con diagramas básicos y avanzando hasta tener como resultado aplicaciones totalmente funcionales.',
   };
-  const description2 = () => {
-    const span1 = (
-      <span className="text-teal-500 dark:text-amber-500">frontend</span>
-    );
-    const span2 = (
-      <span className="text-teal-500 dark:text-amber-500">backend</span>
-    );
-    return (
-      <>
-        Technologies used: React for the {span1} and Node.js, Express, and
-        MongoDB for the {span2}.
-      </>
-    );
-  };
-  const description3 = () => {
-    const span = (
-      <span className="text-teal-500 dark:text-amber-500">Important</span>
-    );
-    return (
-      <>
-        {span}: Due to the use of a free backend deployment service, the
-        websites may take approximately 40 seconds to load all data before
-        running smoothly.
-      </>
-    );
-  };
-  //Spanish
-  const descripción1 = () => {
-    const span = (
-      <span className="text-teal-500 dark:text-amber-500">desde cero</span>
-    );
-    return (
-      <>
-        Todos los proyectos que aparecen a continuación fueron creados {span},
-        comenzando con diagramas básicos y avanzando hasta tener como resultado
-        aplicaciones totalmente funcionales.
-      </>
-    );
-  };
-  const descripción2 = () => {
-    const span1 = (
-      <span className="text-teal-500 dark:text-amber-500">frontend</span>
-    );
-    const span2 = (
-      <span className="text-teal-500 dark:text-amber-500">backend</span>
-    );
-    return (
-      <>
-        Tecnologías utilizadas: React para el {span1}, y Node.js, Express y
-        MongoDB para el {span2}.
-      </>
-    );
-  };
-  const descripción3 = () => {
-    const span = (
-      <span className="text-teal-500 dark:text-amber-500">Importante</span>
-    );
-    return (
-      <>
-        {span}: Los sitios web pueden llegar a tardar hasta 40 segundos en
-        cargar todos los datos, debido al uso de un servicio de alojamiento
-        gratuito para los servidores backend.
-      </>
-    );
+  const timeWarning = {
+    english:
+      '<span className="text-teal-500 dark:text-amber-500">Important:</span> Due to the use of a free backend deployment service, the websites may take approximately 40 seconds to load all data before running smoothly.',
+    spanish:
+      '<span className="text-teal-500 dark:text-amber-500">Importante:</span> Los sitios web pueden llegar a tardar hasta 40 segundos en cargar todos los datos, debido al uso de un servicio de alojamiento gratuito para los servidores backend.',
   };
 
   return (
@@ -93,15 +29,13 @@ export default function Portfolio() {
           {english ? "Portfolio" : "Portafolio"}
         </h3>
         <p className="text-md py-4 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
-          {english ? description1() : descripción1()}
+          {english
+            ? parse(portfolioDescription.english)
+            : parse(portfolioDescription.spanish)}
         </p>
-        {/* En caso de no mostrar las tecnologías en las cartas: */}
-        {/* <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
-          {english ? description2() : descripción2()}
-        </p> */}
         {/* En caso de no pagar backend deployment: */}
         {/* <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
-          {english ? description3() : descripción3()}
+          {english ? parse(timeWarning.english) : parse(timeWarning.spanish)}
         </p> */}
       </div>
       <div className="flex flex-col gap-10 py-7 justify-center md:flex-row md:flex-wrap max-w-7xl mx-auto">
