@@ -38,7 +38,7 @@ export default function Portfolio() {
           {english ? parse(timeWarning.english) : parse(timeWarning.spanish)}
         </p> */}
       </div>
-      <div className="flex flex-col gap-10 py-7 justify-center md:flex-row md:flex-wrap max-w-7xl mx-auto">
+      <div className="flex flex-col gap-10 py-7 justify-center max-w-7xl mx-auto md:flex-row md:flex-wrap">
         {portfolio.map((project) => (
           <PortfolioItem
             key={project.id}

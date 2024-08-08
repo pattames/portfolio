@@ -15,7 +15,7 @@ export default function PortfolioItem({
     <a
       href={link}
       target="_blank"
-      className="group basis-1/3 flex-1 max-w-[39rem] text-gray-700 dark:text-gray-100 sm:duration-200 sm:hover:scale-105"
+      className="basis-1/3 flex-1 max-w-[39rem] text-gray-700 dark:text-gray-100 sm:duration-200 sm:hover:scale-105"
     >
       <h1 className="text-2xl text-center py-1 tracking-widest md:text-3xl">
         {title}
