@@ -2,6 +2,7 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useContext } from "react";
 import { LangContext } from "../context/LangContext";
 import parse from "html-react-parser";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Profile() {
   //Contexts
@@ -20,7 +21,12 @@ export default function Profile() {
           Patricio Tamés
         </h2>
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
-          {english ? "Web Developer." : "Desarrollador Web."}
+          <TypeAnimation
+            sequence={["Web Developer.", 1500, "Desarrollador Web.", 1500]}
+            wrapper="span"
+            speed={30}
+            repeat={Infinity}
+          />
         </h3>
         {/* <div className="my-6 flex justify-center opacity-0 animate-fade shadow-2xl shadow-gray-400 max-w-96 mx-auto dark:shadow-none">
           <img
