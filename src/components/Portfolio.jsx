@@ -11,9 +11,9 @@ export default function Portfolio() {
   //Dynamic text for translation
   const portfolioDescription = {
     english:
-      'All projects listed on this site are created from the <span className="text-teal-500 dark:text-amber-500">ground up,</span> starting with basic wireframing and progressing to fully functional applications.',
+      'All projects listed on this site are created from the <span className="text-teal-500 dark:text-amber-500">ground up</span>, starting with basic wireframing and progressing to fully functional applications.',
     spanish:
-      'Todos los proyectos que aparecen a continuación fueron creados <span className="text-teal-500 dark:text-amber-500">desde cero,</span> comenzando con diagramas básicos y avanzando hasta tener como resultado aplicaciones totalmente funcionales.',
+      'Todos los proyectos que aparecen a continuación fueron creados <span className="text-teal-500 dark:text-amber-500">desde cero</span>, comenzando con diagramas básicos y avanzando hasta tener como resultado aplicaciones totalmente funcionales.',
   };
   const timeWarning = {
     english:
