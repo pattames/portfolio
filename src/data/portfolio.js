@@ -3,7 +3,7 @@ export const portfolio = [
     id: 1,
     title: "Petfect Match",
     description: {
-      english: "Adopt or Rehome a Pet.",
+      english: "Adopt or rehome a pet.",
       spanish: "Adopta o da una mascota en adopción.",
     },
     type: "Full-Stack",
