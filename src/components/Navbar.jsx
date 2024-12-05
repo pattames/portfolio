@@ -11,9 +11,9 @@ export default function Navbar() {
 
   //Variables
   const linkResume =
-    "https://www.canva.com/design/DAGFYdHGwIo/zdWLCik4aVj_LC3387hGPg/view?utm_content=DAGFYdHGwIo&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+    "https://www.canva.com/design/DAGYcrhxw8I/7BLDBz0eScibYTrqjsSvzQ/view?utm_content=DAGYcrhxw8I&utm_campaign=designshare&utm_medium=link&utm_source=editor";
   const linkCV =
-    "https://www.canva.com/design/DAGKLPndbJs/Dng5_QlkFOtYqUWdhRrQPA/view?utm_content=DAGKLPndbJs&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+    "https://www.canva.com/design/DAGYc0t-CiA/DT7ywpgzzsGbTxMUNOx9uA/view?utm_content=DAGYc0t-CiA&utm_campaign=designshare&utm_medium=link&utm_source=editor";
 
   return (
     <nav className="py-10 flex justify-center opacity-0 animate-slideInFromTop rounded-xl flex-wrap gap-8 sm:mb-12 sm:justify-between sm:flex-nowrap">
