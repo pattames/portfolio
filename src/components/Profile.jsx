@@ -14,8 +14,8 @@ export default function Profile() {
     spanish: `Desarrollador full-stack junior, competente en el uso de <span className="text-teal-500 dark:text-amber-500">tecnologías</span> basadas en JavaScript y apasionado por implementar las últimas herramientas para seguir <span className="text-teal-500 dark:text-amber-500">construyendo</span> experiencias digitales.`,
   };
   const profileCorporateDescription = {
-    english: `I'm a junior full-stack developer, <span className="text-teal-500 dark:text-amber-500">proficient</span> in the use of JavaScript-based technologies and passionate about applying the <span className="text-teal-500 dark:text-amber-500">latest</span> tools in a corporate environment.`,
-    spanish: `Desarrollador full stack junior, competente en el uso de <span className="text-teal-500 dark:text-amber-500">tecnologías</span> basadas en JavaScript y apasionado por aplicar las <span className="text-teal-500 dark:text-amber-500">últimas</span> herramientas en un entorno corporativo.`,
+    english: `I'm a junior full-stack developer, <span className="text-teal-500 dark:text-amber-500">proficient</span> in the use of JavaScript-based technologies and passionate about applying the <span className="text-teal-500 dark:text-amber-500">latest</span> tools in corporate environments.`,
+    spanish: `Desarrollador full stack junior, competente en el uso de <span className="text-teal-500 dark:text-amber-500">tecnologías</span> basadas en JavaScript y apasionado por aplicar las <span className="text-teal-500 dark:text-amber-500">últimas</span> herramientas en entornos corporativos.`,
   };
 
   return (
