@@ -1,15 +1,15 @@
 export const portfolio = [
   {
     id: 1,
-    title: "Petfect Match",
+    title: "Fernanda Familiar",
     description: {
-      english: "Adopt or rehome a pet.",
-      spanish: "Adopta o da una mascota en adopción.",
+      english: "View the latest news.",
+      spanish: "Entérate de las últimas noticias.",
     },
-    type: "Full-Stack",
-    stack: ["React", "Node.js", "Express", "MongoDB"],
-    imgUrl: "petfect_match.png",
-    link: "https://petfectmatch.netlify.app/",
+    type: "Front-End",
+    stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
+    imgUrl: "fernandafamiliar125.png",
+    link: "https://fernandafamiliar.vercel.app/",
   },
   {
     id: 2,
@@ -25,15 +25,15 @@ export const portfolio = [
   },
   {
     id: 3,
-    title: "Fernanda Familiar",
+    title: "Petfect Match",
     description: {
-      english: "View the latest news.",
-      spanish: "Entérate de las últimas noticias.",
+      english: "Adopt or rehome a pet.",
+      spanish: "Adopta o da una mascota en adopción.",
     },
-    type: "Front-End",
-    stack: ["React", "Next.js", "Tailwind CSS", "daisyUI"],
-    imgUrl: "fernandafamiliar125.png",
-    link: "https://fernandafamiliar.vercel.app/",
+    type: "Full-Stack",
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    imgUrl: "petfect_match.png",
+    link: "https://petfectmatch.netlify.app/",
   },
   {
     id: 4,
