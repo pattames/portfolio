@@ -9,13 +9,9 @@ export default function Profile() {
   const { english } = useContext(LangContext);
 
   //Dynamic text for translation
-  const profilePersonalDescription = {
-    english: `I'm a junior full-stack developer, <span className="text-teal-500 dark:text-amber-500">proficient</span> in the use of JavaScript-based technologies and passionate about implementing the latest tools to keep <span className="text-teal-500 dark:text-amber-500">building</span> digital experiences.`,
-    spanish: `Desarrollador full-stack junior, competente en el uso de <span className="text-teal-500 dark:text-amber-500">tecnologías</span> basadas en JavaScript y apasionado por implementar las últimas herramientas para seguir <span className="text-teal-500 dark:text-amber-500">construyendo</span> experiencias digitales.`,
-  };
-  const profileCorporateDescription = {
-    english: `I'm a junior full-stack developer, <span className="text-teal-500 dark:text-amber-500">proficient</span> in the use of JavaScript-based technologies and passionate about applying the <span className="text-teal-500 dark:text-amber-500">latest</span> tools in corporate environments.`,
-    spanish: `Desarrollador full stack junior, competente en el uso de <span className="text-teal-500 dark:text-amber-500">tecnologías</span> basadas en JavaScript y apasionado por aplicar las <span className="text-teal-500 dark:text-amber-500">últimas</span> herramientas en entornos corporativos.`,
+  const profileDescription = {
+    english: `I'm a full-stack developer, <span className="text-teal-500 dark:text-amber-500">proficient</span> with multiple technologies and passionate about applying the most <span className="text-teal-500 dark:text-amber-500">suitable</span> ones for the job at hand.`,
+    spanish: `Desarrollador full-stack, competente en múltiples <span className="text-teal-500 dark:text-amber-500">tecnologías</span> y apasionado por aplicar las más <span className="text-teal-500 dark:text-amber-500">adecuadas</span> según las necesidades del proyecto.`,
   };
 
   return (
@@ -56,8 +52,8 @@ export default function Profile() {
         </div> */}
         <p className="text-md py-6 px-4 leading-8 text-gray-500 md:text-xl max-w-6xl mx-auto dark:text-gray-400 opacity-0 animate-fade border-b-2 border-r-4 border-gray-400">
           {english
-            ? parse(profileCorporateDescription.english)
-            : parse(profileCorporateDescription.spanish)}
+            ? parse(profileDescription.english)
+            : parse(profileDescription.spanish)}
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-12 text-gray-600 opacity-0 animate-fade mb-20 dark:text-gray-300 sm:gap-16">
