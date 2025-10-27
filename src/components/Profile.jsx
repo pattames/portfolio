@@ -24,7 +24,7 @@ export default function Profile() {
           {english ? (
             <Typewriter
               options={{
-                strings: ["Web Developer."],
+                strings: ["Software Developer."],
                 autoStart: true,
                 loop: true,
                 delay: 75,
@@ -34,7 +34,7 @@ export default function Profile() {
           ) : (
             <Typewriter
               options={{
-                strings: ["Desarrollador Web."],
+                strings: ["Desarrollador de Software."],
                 autoStart: true,
                 loop: true,
                 delay: 75,
