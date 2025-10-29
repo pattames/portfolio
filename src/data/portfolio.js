@@ -9,7 +9,7 @@ export const portfolio = [
     type: "AI App",
     stack: ["CrewAI", "Chroma", "Groq", "Streamlit"],
     imgUrl: "vet_chatbot.jpg",
-    link: "https://veterinarychatbot.streamlit.app/",
+    link: "https://vet-chatbot.onrender.com",
   },
   {
     id: 2,
