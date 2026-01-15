@@ -17,9 +17,9 @@ export default function Portfolio() {
   };
   const timeWarning = {
     english:
-      '<span className="text-teal-500 dark:text-amber-500">Important</span>: Due to the use of a free backend deployment service, the full-stack websites may take approximately 40 seconds to load all data before running smoothly.',
+      '<span className="text-teal-500 dark:text-amber-500">Important</span>: Due to the use of a free backend deployment service, full-stack projects may take approximately 40 seconds to load all data before running smoothly.',
     spanish:
-      '<span className="text-teal-500 dark:text-amber-500">Importante</span>: Los sitios full-stack pueden llegar a tardar hasta 40 segundos en cargar todos los datos debido al uso de un servicio de alojamiento gratuito para los servidores backend.',
+      '<span className="text-teal-500 dark:text-amber-500">Importante</span>: Los proyectos full-stack pueden llegar a tardar hasta 40 segundos en cargar todos los datos debido al uso de un servicio de alojamiento gratuito para los servidores backend.',
   };
 
   return (
