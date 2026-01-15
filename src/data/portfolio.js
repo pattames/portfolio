@@ -7,9 +7,9 @@ export const portfolio = [
       spanish: "Asistente de IA especializado en casos veterinarios.",
     },
     type: "AI App",
-    stack: ["CrewAI", "Chroma", "Groq", "Streamlit"],
+    stack: ["CrewAI", "Groq", "Streamlit"],
     imgUrl: "vet_chatbot.jpg",
-    link: "https://vet-chatbot.onrender.com",
+    link: "https://vet-chatbot-v2.onrender.com",
   },
   {
     id: 2,

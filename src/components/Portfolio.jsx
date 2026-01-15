@@ -34,9 +34,9 @@ export default function Portfolio() {
             : parse(portfolioDescription.spanish)}
         </p>
         {/* En caso de no pagar backend deployment: */}
-        {/* <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
+        <p className="text-md py-2 md:text-xl leading-8 text-gray-500 dark:text-gray-400">
           {english ? parse(timeWarning.english) : parse(timeWarning.spanish)}
-        </p> */}
+        </p>
       </div>
       <div className="flex flex-col gap-10 py-7 justify-center max-w-7xl mx-auto md:flex-row md:flex-wrap">
         {portfolio.map((project) => (
