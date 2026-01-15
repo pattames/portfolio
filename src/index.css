@@ -7,6 +7,12 @@
   src: url(../public/Burtons.otf);
 }
 
+@font-face {
+  font-family: "pleasure";
+  src: url(/Pleasure.ttf) format("truetype");
+  font-display: swap;
+}
+
 /* Smooth darkmode transition */
 /* * {
   @apply transition-colors duration-200;

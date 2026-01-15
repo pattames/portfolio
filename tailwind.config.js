@@ -32,6 +32,7 @@ export default {
       },
       fontFamily: {
         burtons: "burtons",
+        pleasure: "pleasure",
       },
     },
   },

@@ -17,7 +17,7 @@ export default function Profile() {
   return (
     <section>
       <div className="text-center pb-8 pt-5 sm:py-10">
-        <h2 className="text-5xl py-3 text-teal-500 font-bold animate-ping font-sans md:text-7xl dark:text-amber-500">
+        <h2 className="text-5xl py-3 text-teal-500 font-bold animate-ping font-pleasure md:text-7xl dark:text-amber-500">
           Patricio Tamés
         </h2>
         <h3 className="text-2xl py-3 md:text-3xl dark:text-white opacity-0 animate-fade">
