@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom text outline (theme aware) */
+.text-outline {
+  text-shadow:
+    -1px -1px 0 #14b8a6,
+     1px -1px 0 #14b8a6,
+    -1px  1px 0 #14b8a6,
+     1px  1px 0 #14b8a6;
+}
+
+[data-theme="dark"] .text-outline {
+  text-shadow:
+    -1px -1px 0 #f59e0b,
+     1px -1px 0 #f59e0b,
+    -1px  1px 0 #f59e0b,
+     1px  1px 0 #f59e0b;
+}
+
+/* Fonts */
 @font-face {
   font-family: "burtons";
   src: url(../public/Burtons.otf);
